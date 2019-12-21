@@ -1,0 +1,1 @@
+export const MORE_THAN_THREE_OPTIONS_NEEDED_ERROR_MESSAGE = 'There must be more than three options'
