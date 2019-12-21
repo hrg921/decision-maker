@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "decision maker, based on principles and reliability",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
