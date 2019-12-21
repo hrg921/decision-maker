@@ -1,0 +1,22 @@
+{
+  "name": "decision-maker",
+  "version": "0.0.0",
+  "description": "decision maker, based on principles and reliability",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrg921/decision-maker.git"
+  },
+  "author": "GeonHo Tony Han, hrg921",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/jest": "^24.0.24",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.4"
+  }
+}
