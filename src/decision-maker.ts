@@ -15,6 +15,9 @@ export class DecisionMaker {
   }
 
   public makeDecision(answers: any[]) {
-    return "not great partner relationship";
+    const isEveryConclusionTrue = answers.every(a => a.conclusion);
+    return isEveryConclusionTrue
+      ? "great partner relationship"
+      : "not great partner relationship";
   }
 }
