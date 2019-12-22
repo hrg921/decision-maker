@@ -33,3 +33,20 @@ it('If there\'s "no" in PARTNER_RELATIONSHIP_DECISION_QUESTIONS then that relati
   ]);
   expect(decision).toEqual(expect.stringMatching(expected));
 });
+
+it('If there\'s no "no" in PARTNER_RELATIONSHIP_DECISION_QUESTIONS then that relationship is great partner relationship', () => {
+  const expected = /not great partner relationship/;
+  const decisionMaker = new DecisionMaker(
+    "partner relationship",
+    PARTNER_RELATIONSHIP_DECISION_QUESTIONS
+  );
+  const decision = decisionMaker.makeDecision([
+    { answer: "answer", conclusion: true },
+    { answer: "answer", conclusion: true },
+    { answer: "answer", conclusion: true },
+    { answer: "answer", conclusion: true },
+    { answer: "answer", conclusion: true },
+    { answer: "answer", conclusion: true }
+  ]);
+  expect(decision).toEqual(expect.not.stringMatching(expected));
+});
