@@ -19,5 +19,8 @@
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
     "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "koa": "^2.11.0"
   }
 }
