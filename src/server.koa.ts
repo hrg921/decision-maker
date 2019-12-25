@@ -1,9 +1,12 @@
-import Koa, { Context } from 'koa';
+import Koa from 'koa';
+
+const HOST = "0.0.0.0";
+const PORT = 3000;
 
 const app = new Koa();
 
-app.use(async (ctx: Context) => {
+app.use(async (ctx: Koa.Context) => {
   ctx.body = "Hello World";
 });
 
-app.listen(3000);
+app.listen(PORT, HOST);
