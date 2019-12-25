@@ -19,7 +19,7 @@ export class Evolution {
   public set action(action: any) {
     this._action = action;
   }
-  public get state(): string {
-    return "completed";
+  public get state(): { title: string } {
+    return { title: "completed" };
   }
 }
