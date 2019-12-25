@@ -12,6 +12,4 @@ it("Completed Evolution has Goal, Problem, Diagnosis, Design, Action and all the
   expect(completedEvolution.state).toEqual("completed");
 });
 
-it(
-  'is about the methodology how to achieve goal. And I defined this process "evolution"'
-);
+it.skip('is about the methodology how to achieve goal. And I defined this process "evolution"', () => {});
