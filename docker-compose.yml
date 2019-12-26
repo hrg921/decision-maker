@@ -1,0 +1,14 @@
+version: "3"
+services:
+  develop-koa:
+    build: .
+    ports:
+      - "9876:3000"
+    volumes:
+      - ./build:/usr/app/build
+    command:
+      - /bin/bash
+      - -c
+      - |
+        npm install -g nodemon
+        nodemon --watch build ./build/server.koa.js
