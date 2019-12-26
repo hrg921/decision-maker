@@ -6,7 +6,8 @@ const PORT = 3000;
 const app = new Koa();
 
 app.use(async (ctx: Koa.Context) => {
-  ctx.body = "Hello World";
+  ctx.body = "Hello World!";
 });
 
 app.listen(PORT, HOST);
+console.log('hello')

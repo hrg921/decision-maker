@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "decision maker, based on principles and reliability",
   "scripts": {
+    "compose": "docker-compose up",
+    "start": "yarn compose & yarn tsc:watch",
+    "tsc:watch": "tsc --watch",
     "test": "jest",
     "test:watch": "jest --watch"
   },
