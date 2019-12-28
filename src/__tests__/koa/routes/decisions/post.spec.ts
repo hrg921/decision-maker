@@ -7,6 +7,7 @@ describe("/decisions post requests", () => {
       .post("/decisions")
       .send({ title: "new decision" });
     expect(res.status).toEqual(200);
+    expect(res.body).toHaveProperty("id");
     expect(res.body).toHaveProperty("decision");
   });
 });
