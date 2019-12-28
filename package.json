@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "decision maker, based on principles and reliability",
   "scripts": {
-    "compose": "docker-compose up",
-    "start": "yarn compose & yarn tsc:watch",
+    "dev": "concurrently \"docker-compose up\" \"yarn tsc:watch\"",
     "tsc:watch": "tsc --watch",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -19,7 +18,9 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.7.7",
     "babel-jest": "^24.9.0",
+    "concurrently": "^5.0.2",
     "jest": "^24.9.0",
+    "supertest": "^4.0.2",
     "ts-node": "^8.5.4"
   },
   "dependencies": {
