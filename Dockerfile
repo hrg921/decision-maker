@@ -16,4 +16,4 @@ COPY src ./src
 RUN npx tsc; exit 0
 
 EXPOSE 3000
-CMD ["node", "./build/server.koa.js"]
+CMD ["node", "./build/koa/server.js"]
