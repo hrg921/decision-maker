@@ -5,6 +5,8 @@ export const router = new Router();
 router.post("/", ctx => {
   ctx.body = {
     id: 1,
-    decision: ""
+    decision: {
+      title: ctx.request.body.title
+    }
   };
 });
