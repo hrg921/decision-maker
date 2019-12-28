@@ -35,6 +35,9 @@
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.8.0",
+    "typeorm": "^0.2.22",
     "typescript": "^3.7.4"
   }
 }

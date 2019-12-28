@@ -1,0 +1,8 @@
+version: "3"
+services:
+  test-koa:
+    build: .
+    volumes:
+      - ./src:/usr/app/src
+    tty: true
+    command: yarn test:watch

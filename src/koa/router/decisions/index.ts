@@ -1,12 +1,25 @@
 import Router from 'koa-router';
+import Container from 'typedi';
+import { DecisionController } from '~koa/controllers/decision';
 
 export const router = new Router();
 
-router.post("/", ctx => {
+const decisionController = Container.get(DecisionController);
+
+router.get("/:id", ctx => {
   ctx.body = {
-    id: 1,
     decision: {
-      title: ctx.request.body.title
+      id: +ctx.params.id
+    }
+  };
+});
+
+router.post("/", async ctx => {
+  const { id, title } = await decisionController.addDecision(ctx.body.title);
+  ctx.body = {
+    decision: {
+      id,
+      title
     }
   };
 });
