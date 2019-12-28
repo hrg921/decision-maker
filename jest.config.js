@@ -1,3 +1,4 @@
 module.exports = {
-  name: "decision-maker"
+  name: "decision-maker",
+  preset: "ts-jest"
 };
