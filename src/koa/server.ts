@@ -1,13 +1,7 @@
-import Koa from 'koa';
+import { app } from './app';
 
-const HOST = "0.0.0.0";
 const PORT = 3000;
-
-export const app = new Koa();
-
-app.use(async (ctx: Koa.Context) => {
-  ctx.body = "Hello World!";
-});
-
+const HOST = "0.0.0.0";
 app.listen(PORT, HOST);
-console.log("hello");
+
+console.info(`Koa server is listening ${HOST}:${PORT}`);
